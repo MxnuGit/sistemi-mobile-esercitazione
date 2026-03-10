@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -16,7 +17,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnActivityMain)
             .setOnClickListener {
-                Log.d("btnActivityMain", "Premuto il bottone in alto")
+                Log.d("btnActivityMain", "Cambiato Activity")
+
+                val myIntent = Intent(this, MyNewActivity::class.java)
+                startActivity(myIntent)
             }
     }
 }
