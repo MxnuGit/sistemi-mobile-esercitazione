@@ -11,4 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cheese"/>
+    <CheckBox android:id="@+id/checkbox_stuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stuff"/>
+    <CheckBox android:id="@+id/checkbox_moreStuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More stuff"/>
+
 </LinearLayout>
