@@ -17,7 +17,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnActivityMain)
             .setOnClickListener {
-                Log.d("btnActivityMain", "Premuto il bottone in alto")
+                Log.d("btnActivityMain", "Cambiato Activity")
+
+                val myIntent = Intent(this, MyNewActivity::class.java)
+                startActivity(myIntent)
             }
 
         findViewById<Button>(R.id.toActivity2)
